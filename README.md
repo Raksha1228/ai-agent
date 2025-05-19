@@ -1,2 +1,19 @@
-# ai-agent
-A simple chatbot dashboard for BMSIT\&amp;M using Flask and JavaScript. It uses a Naive Bayes model trained on `intents.json` to classify user input and respond accordingly. Features include a styled web UI, text classification, and a `/chat` API endpoint for real-time interaction.
+# BMSIT&M Chatbot Dashboard
+
+A basic web chatbot for BMSIT&M built using Flask and JavaScript. It uses a Naive Bayes classifier trained on intent data to provide responses in real-time.
+
+## Features
+
+- ML-based chatbot using Naive Bayes
+- JSON-based intent classification
+- Responsive UI with chat interface
+- Flask backend with `/chat` API endpoint
+
+## Technologies Used
+
+- Python (Flask)
+- HTML, CSS, JavaScript
+- Scikit-learn (Naive Bayes)
+
+
+
