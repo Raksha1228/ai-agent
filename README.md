@@ -36,7 +36,7 @@ source agent_env/bin/activate
 
 # 4. Install dependencies
 pip install -r requirements.txt
-
+```
 
 ###Configure API Keys
 GROQ_API_KEY=your_groq_api_key
