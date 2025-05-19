@@ -38,16 +38,16 @@ source agent_env/bin/activate
 pip install -r requirements.txt
 ```
 
-###Configure API Keys
+## Configure API Keys
 GROQ_API_KEY=your_groq_api_key
 OPEN_WEATHER_KEY=your_openweather_api_key
 TAVILY_API_KEY=your_tavily_api_key
 
-###Using Local LLMs with Ollama(Optional)
-#Download and install Ollama: https://ollama.com/download
-#Pull a model like llama3:
+## Using Local LLMs with Ollama(Optional)
+# Download and install Ollama: https://ollama.com/download
+# Pull a model like llama3:
 curl http://localhost:11434/api/pull -d '{"name": "llama3:instruct"}'
 
-###Running the agent
+## Running the agent
 python main.py
 
