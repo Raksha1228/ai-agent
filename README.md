@@ -1,19 +1,53 @@
-# BMSIT&M Chatbot Dashboard
+# LLM Agent Tool Usage Framework
 
-A basic web chatbot for BMSIT&M built using Flask and JavaScript. It uses a Naive Bayes classifier trained on intent data to provide responses in real-time.
+This project demonstrates a simple AI agent powered by Large Language Models (LLMs) that can interact with external tools to perform specific tasks. It supports both local (via Ollama) and cloud-based (via Groq) language models.
 
-## Features
+## 🧠 Features
 
-- ML-based chatbot using Naive Bayes
-- JSON-based intent classification
-- Responsive UI with chat interface
-- Flask backend with `/chat` API endpoint
+The AI agent supports the following tools:
 
-## Technologies Used
+- Time Tool – Returns the current time for a given timezone (e.g., Asia/Kolkata).
+- Weather Tool – Gives real-time weather updates using the OpenWeather API.
+- Web Search Tool – Searches the internet using the Tavily API.
+- Calculator Tool – Performs arithmetic and logical operations based on input JSON.
+- Reverser Tool – Reverses any input string.
 
-- Python (Flask)
-- HTML, CSS, JavaScript
-- Scikit-learn (Naive Bayes)
+## ⚙️ Prerequisites
+
+- Python 3.11
+- Code editor (e.g., VS Code)
+- Terminal (Command Prompt / PowerShell / VS Code terminal)
+
+## 🛠️ Setup Instructions
+
+```bash
+# 1. Clone the repository
+git clone <your-repo-url>
+cd <repo-name>
+
+# 2. Create a virtual environment
+python -m venv agent_env
+
+# 3. Activate the virtual environment
+# On Windows:
+agent_env\Scripts\activate
+# On macOS/Linux:
+source agent_env/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
 
 
+###Configure API Keys
+GROQ_API_KEY=your_groq_api_key
+OPEN_WEATHER_KEY=your_openweather_api_key
+TAVILY_API_KEY=your_tavily_api_key
+
+###Using Local LLMs with Ollama(Optional)
+#Download and install Ollama: https://ollama.com/download
+#Pull a model like llama3:
+curl http://localhost:11434/api/pull -d '{"name": "llama3:instruct"}'
+
+###Running the agent
+python main.py
 
